@@ -1,0 +1,129 @@
+body {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+
+
+.efeito-jogo{
+    position: relative;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        border: 1px solid rgba(255, 0, 0, 0.708);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .efeito-jogo::before {
+      background: white;
+        content: '';
+        position: absolute;
+        width: 9%;
+        height: 3000%;
+        animation: animate 18.5s linear infinite;
+    }
+    @keyframes animate {
+        0% {
+            transform: rotate(0deg);
+        }
+    
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+
+.container-jogo{
+    background-color: #000000;
+    z-index: 10;
+    margin: auto;
+    width: 99%;
+    height: 99%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+header{
+    width: 100%;
+    height: 15%;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    display: flex;
+
+}
+.titulo-jogo{
+    margin: auto;
+    text-align: center;
+    line-height: 1.5;
+    text-shadow: 0.1em 0.1em 0.2em rgb(255, 0, 0)
+}
+
+
+.pergunta{
+    width: 90%;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 3px yellow;
+}
+
+
+.container-jogador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    
+}
+    
+
+.container-resposta{
+    background-color: transparent;
+    width: 60% ;
+    height: 30px;
+    padding: 0 10px;
+    margin: 25px;
+   color: red;
+    border: 1px solid rgba(255, 0, 0, 0.435);
+}
+
+
+.botao {
+   
+    background-image: url(https://t4.ftcdn.net/jpg/05/18/41/91/360_F_518419158_yXXBww2r5Z3XoutBxRX8KHNZOpPjhC03.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 75%;
+    color:white;
+    width: 50%;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 5px 10px;
+    animation: piscar 3.5s infinite; 
+    border: 1px solid black;
+    -webkit-box-shadow: 0px 0px 5px  rgba(255, 255, 255, 0);
+    -moz-box-shadow:    0px 0px 5px rgba(255, 255, 255, 0);
+    box-shadow:         0px 0px 5px rgba(255, 255, 255, 0);
+}
+
+@keyframes piscar {
+    0%,
+    100% {
+
+    }
+    50% {
+     
+        -webkit-box-shadow: 0px 1px 10px rgb(102, 102, 248);
+		-moz-box-shadow:    0px 1px 10px rgb(102, 102, 248);
+		box-shadow:         0px 1px 10px rgb(102, 102, 248);
+    }
+}
