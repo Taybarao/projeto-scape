@@ -5,7 +5,6 @@ body {
 display: flex;
 align-items: center;
 justify-content: center;
-overflow: hidden;
 }
 
 
@@ -18,6 +17,7 @@ overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
     }
     .efeito-jogo::before {
       background: white;
@@ -43,12 +43,13 @@ overflow: hidden;
     z-index: 10;
     margin: auto;
     width: 99%;
-    height: 99%;
+    height: 99vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    
 }
 header{
     width: 100%;
