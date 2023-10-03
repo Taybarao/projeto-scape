@@ -1,21 +1,19 @@
 let pergunta = [
-   "0       SCAPE  <br>  um jogo de RPG com alguns enigmas e umas armadilhas fuja do obvio e lembre-se nao 'nao force a fechadura ou ficara preso para sempre'<br> aceita jogar?",
+   "   SCAPE <br> SCAPE é um jogo de RPG com alguns enigmas e armadilhas. Fuja do óbvio e lembre-se: não force a fechadura, ou ficará preso para sempre. <br> Aceita jogar?",
 
-   " 1 voce tentou sair mas percebeu que a porta esta trancada voce precisa achar as 3 chaves para abrir a fechadura , ao olhar pelo quarto voce viu 2 coisas que chamaram sua atençao um quadro e uma gaveta  em qual desses quer procurar primeiro",
+   "  Você tentou sair, mas percebeu que a porta está trancada. Você precisa achar as 3 chaves para abrir a fechadura. Ao olhar pelo quarto, você viu 2 coisas que chamaram sua atenção: um quadro e uma gaveta. Em qual desses quer procurar primeiro?",
 
-   " 2 voce observou que o quadro tinha algo estranho  atras  e tirou da parece  atras do quadro esta o enigma para a chave azul que é um numero digite o numero da chave 14",
+   "  Você observou que o quadro tinha algo estranho atrás e tirou da parede. Atrás do quadro, está o enigma para a chave azul, que é um número. Digite o número da chave: 14.",
 
-   " 3 a gaveta esta trancada precisa de uma chave para abrir , uma dica 'posso ter rostos ,posso ter paisagens em minha face pode posso ser belo ou incompreendido' oque eu sou? ",
+   " A gaveta está trancada e precisa de uma chave para abrir. Uma dica: 'Posso ter rostos, posso ter paisagens em minha face. Posso ser belo ou incompreendido.' O que eu sou?",
      
-   "4 voce achou sua primeira chave   para seguir no jogo resolva a seguinte charada  Em moveis eu residuo , as vezes de madeira as vezes de metal  guerdo segredos do pequeno ao especial geralmente vou e volto ...qual meu nome?",
+   "voce achou sua primeira chave   para seguir no jogo resolva a seguinte charada  Em moveis eu residuo , as vezes de madeira as vezes de metal  guerdo segredos do pequeno ao especial geralmente vou e volto ...qual meu nome?",
 
-   "5  ao abrir o livro percebeu que uma das paginhas tinha algo diferente nesta pagina esta o segredo da chave vermelha se encontrar basta digitar",
+   "  Ao abrir o livro, percebeu que uma das páginas tinha algo diferente. Nesta página, está o segredo da chave vermelha. Se encontrar, basta digitar.",   
 
-   
+   " Você abriu a gaveta e achou a chave verde (07) e também encontrou um livro. Agora, com o livro em mãos, em uma das páginas, você achou algo diferente. Nesta página está o segredo da chave vermelha. Para encontrar, basta digitar.",
 
-   " 6 voce abriu a gaveta e achou a chave verde (07),e achou um livro agora  com o livro em maos em uma das paginas voce achou algo diferente nesta pagina esta o segredo da chave vermelha se encontrar basta digitar",
-
-   " 7 certo voce achou 3 chaves  e foi ate a porta nela esta a sequancia de chaves que precisa colocar para escapar"
+   "  certo voce achou 3 chaves  e foi ate a porta nela esta a sequência de chaves que precisa colocar para escapar"
  ];
  let respostas = ["Sim","Nao","Quadro","Gaveta","14"];
  
