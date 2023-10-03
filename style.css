@@ -66,6 +66,9 @@ header{
     text-shadow: 0.1em 0.1em 0.2em rgb(255, 0, 0)
 }
 
+#imagemQuarto, #imagemgaveta, #imagemchaveazul, #imagemQuadro {
+    display: none; 
+}
 
 
 

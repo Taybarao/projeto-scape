@@ -3,11 +3,11 @@ let pergunta = [
 
    " 1 voce tentou sair mas percebeu que a porta esta trancada voce precisa achar as 3 chaves para abrir a fechadura , ao olhar pelo quarto voce viu 2 coisas que chamaram sua atençao um quadro e uma gaveta  em qual desses quer procurar primeiro",
 
-   " 2 voce observou que o quadro tinha algo estranho  atras  e tirou da parece  atras do quadro esta o enigma para a chave azul que é um numero digite o numero da chave",
+   " 2 voce observou que o quadro tinha algo estranho  atras  e tirou da parece  atras do quadro esta o enigma para a chave azul que é um numero digite o numero da chave 14",
 
    " 3 a gaveta esta trancada precisa de uma chave para abrir , uma dica 'posso ter rostos ,posso ter paisagens em minha face pode posso ser belo ou incompreendido' oque eu sou? ",
      
-   "4 voce achou sua primeira chave  para seguir no jogo resolva a seguinte charada  Em moveis eu residuo , as vezes de madeira as vezes de metal  guerdo segredos do pequeno ao especial geralmente vou e volto ...qual meu nome?",
+   "4 voce achou sua primeira chave   para seguir no jogo resolva a seguinte charada  Em moveis eu residuo , as vezes de madeira as vezes de metal  guerdo segredos do pequeno ao especial geralmente vou e volto ...qual meu nome?",
 
    "5  ao abrir o livro percebeu que uma das paginhas tinha algo diferente nesta pagina esta o segredo da chave vermelha se encontrar basta digitar",
 
@@ -18,6 +18,7 @@ let pergunta = [
    " 7 certo voce achou 3 chaves  e foi ate a porta nela esta a sequancia de chaves que precisa colocar para escapar"
  ];
  let respostas = ["Sim","Nao","Quadro","Gaveta","14"];
+ 
 
 
 
@@ -25,6 +26,8 @@ let pergunta = [
 
  perguntar();
  tecla(); 
+
+
  function perguntar() {
    mostrarPergunta('h1', pergunta[0]);}
    function tecla(){
@@ -41,23 +44,45 @@ let pergunta = [
     }  
   function verificarResposta() {
    let respostaJogador = document.querySelector('input').value;
-   respostaJogador.value = '';
    console.log(respostaJogador);
-   if (pergunta[0] && respostaJogador === respostas[0]) {
+   if (respostaJogador === respostas[0]){
+    imagemQuarto.style.display = 'block';
+    imagemlogo.style.display = 'none';
      mostrarPergunta('h1', pergunta[1]);
-   } else if (pergunta[0] && respostaJogador === respostas[1]) {
+   } else if (respostaJogador === respostas[1]) {
      mostrarPergunta('h1', pergunta[1]);
    } else if (pergunta[1] && respostaJogador === respostas[2]) {
+    imagemgaveta.style.display = "none";
+    imagemQuadro.style.display = "block";
+    imagemlogo.style.display = "none";
+    imagemQuarto.style.display = "none";
+    imagemchaveazul.style.display = "none";
      mostrarPergunta('h1', pergunta[2]);
-   } else if (pergunta[1] && respostaJogador === respostas[3]) {
-     mostrarPergunta('h1', pergunta[3]);
-    } else if (pergunta[2] && respostaJogador === respostas[4]) {
+   } else if (respostaJogador === respostas[3]) {
+    mostrarPergunta('h1', pergunta[3]);
+    imagemgaveta.style.display = "block";
+    imagemQuadro.style.display = "none";
+    imagemlogo.style.display = "none";
+    imagemQuarto.style.display = "none";
+    imagemchaveazul.style.display = "none";
+    } else if (respostaJogador === respostas[4]) {
+      imagemchaveazul.style.display = "block";
+      imagemgaveta.style.display = "none";
+      imagemQuarto.style.display = "none";
+      imagemQuadro.style.display = "none";
+      imagemlogo.style.display = "none";
       mostrarPergunta('h1', pergunta[4]);
-    } else if (pergunta[2] && respostaJogador === respostas[4]) {
+    } else if (respostaJogador === respostas[4]) {
       mostrarPergunta('h1', pergunta[4]);
    } else {
      mostrarPergunta('h1', 'voce forçou a fechadura volte ao inicio');
    }
+  
+  
+
+   
+  
+    
  } 
  function limparCampo() {
   let respostaJogador = document.querySelector('input');
