@@ -1,46 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-    <title>scape</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>liberdade</title>
+    <link rel="stylesheet" href="stylescape.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
-<body class="corpo-jogo">
-  
-    <div class="efeito-jogo">
-    <main class="container-jogo">
-
-    <header>
-        <h1 class="titulo-jogo">
-    </h1>
-    </header>
-    <img id="imagemlogo" src="logogame.jpg" alt="">
-    <img id="imagemgaveta" src="gaveta.jpg" alt="">
-    <img id="imagemQuarto"  src="scape.jfif" alt="" >
-    <img id="imagemchaveazul" src="chvave azul.jpg" alt="">
-    <img  id="imagemQuadro" src="Quadro.jpg" alt="">
+<body>
     
-     
-<div class="container-jogador">
-    <button onclick="verificarResposta()" class="botao">Responder</button>
-
-    <input type="text" name="" id="" placeholder="digite sua resposta" class="container-resposta">
-
+        <video autoplay muted loop>
+          <source src="background_-_16224 (1080p).mp4" type="video/mp4">
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+        
+       
+   <main class="container-introduçao">
+    <h1 class="titulo-jogo">liberdade</h1>
+    <div class="container-texto-introduçao">
+        <h2 class="descriçao-jogo">um jogo de enigmas onde seu raciocinio sera desafiado</h2>
+        <ul class="regras">
+            <li class="item-regras">Fuja do obvio</li>
+            <li class="item-regras">responda com |palavras| ou |00| numeros</li>
+            <li class="item-regras">se forçar a fechadura voce volta pro inicio</li>
+            <li class="item-regras">usando algumas palavras voce se movimenta pelo quarto</li>
+            <li class="item-regras">guarde bem suas chaves</li>
+        </ul>
+      
     </div>
+    <a class="link-jogo" href="game.html">Entrar no quarto</a>
+          
+         
 
+         
     </main>
-</div>
-
- 
-    
-
-
-  <script src="game.js" defer></script>  
+    <script src="script.js"></script>
 </body>
 </html>
