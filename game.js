@@ -17,21 +17,22 @@ let pergunta = [
 ];
 let respostas = ["Sim","Nao","Quadro","Gaveta","14"];
 
-
-
-perguntar();
-tecla(); 
-limparCampo();
-
-
 function perguntar() {
 
   mostrarPergunta('h1', pergunta[0]);}
    function mostrarPergunta(tag, texto) {
   let textoPergunta = document.querySelector(tag);
   textoPergunta.innerHTML = texto;
+  responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
   limparCampo();   
    }  
+
+perguntar();
+tecla(); 
+limparCampo();
+
+
+
  function verificarResposta() {
   let respostaJogador = document.querySelector('input').value;
   console.log(respostaJogador);
@@ -98,4 +99,3 @@ function tecla(){
 
  
  
-
